@@ -22,10 +22,10 @@ $ adb reboot [OPTION]
 
 1. Unlock bootloader (by enabling dev options -> OEM unlock)
 2. Set default usb config as file transfer within dev options
-3. Plug device into PC, register it with the RSA fingerprint (maybe through running the adb cmd from file location?)
-4. Boot into recovery mode by running $adb reboot recovery
+3. Plug device into PC, register it with the RSA fingerprint
+4. Boot into recovery mode by running ```console $adb reboot recovery```
 5. Wipe the device (best practice)
-5. Depending on your recovery img, you can sideload the os.zip by $adb sideload os.zip. Take note of the slot letter (either A or B)
+5. Depending on your recovery img, you can sideload the os.zip by: ```console $adb sideload os.zip ``` Take note of the slot letter (either A or B)
 6. Once completed, depending on your recovery img, either do:
 	i. Switch slots (TWRP) then reboot into recovery
 	ii. Reboot into recovery (which switches slots for you, ie lineage recov img)
