@@ -1,14 +1,14 @@
 # ROM
 
-General instructions on how to flash a custom ROM on to your Android device
-
-Note: Steps include GAPPS install
+General instructions on how to flash a custom ROM on to your Android device. These steps include GAPPS installation.
 
 Some additional commands:
+```console
 $ adb start-server
 $ adb kill-server
 $ adb sideload something.zip
 $ adb reboot [OPTION]
+```
 [OPTION] can be recovery, bootloader, etc
 
 
@@ -36,4 +36,4 @@ Congratulations, you've successfully flashed a custom ROM on to your device!
 
 ## License
 
-This project is licensed under [The MIT License (MIT)](LICENSE)
+These instructions are licensed under [The MIT License (MIT)](LICENSE)
