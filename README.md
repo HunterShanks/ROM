@@ -1,4 +1,5 @@
 # ROM
+
 General instructions on how to flash a custom ROM on to your Android device
 
 Note: Steps include GAPPS install
@@ -10,12 +11,15 @@ $ adb sideload something.zip
 $ adb reboot [OPTION]
 [OPTION] can be recovery, bootloader, etc
 
+
 ## Pre-reqs:
+
 - Backup all of your data, we will be wiping the entire partition
 - ADB + Platform tools installed (fastboot)
 - Have ALL necessary files (ie recov img + zip, os.zip + img, gapps.zip)
 
 ## Steps
+
 1. Unlock bootloader (by enabling dev options -> OEM unlock)
 2. Set default usb config as file transfer within dev options
 3. Plug device into PC, register it with the RSA fingerprint (maybe through running the adb cmd from file location?)
@@ -29,3 +33,7 @@ $ adb reboot [OPTION]
 8. Reboot system
 
 Congratulations, you've successfully flashed a custom ROM on to your device!
+
+## License
+
+This project is licensed under [The MIT License (MIT)](LICENSE)
